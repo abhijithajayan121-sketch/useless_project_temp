@@ -79,8 +79,8 @@ For Hardware:
 ![Circuit](Add your circuit diagram here)
 *Add caption explaining connections*
 
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
+![Schematic](<schem.png>)
+*same thing as the circuit , just black and whitw*
 
 # Build Photos
 ![Components](Add photo of your components here)
