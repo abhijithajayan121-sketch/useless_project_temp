@@ -17,11 +17,15 @@ char selectedOp = ' ';
 enum State { SELECT_NUM1, SELECT_NUM2, WAITING_RESPONSE };
 State currentState = SELECT_NUM1;
 
+// Clear button press counter tracking total resets
+int clearPressCount = 0;
+
 unsigned long lastDebounceTime = 0;
 const unsigned long debounceDelay = 250; 
 
 void setup() {
   Serial.begin(9600);
+  randomSeed(analogRead(A1)); // Seed random generator using an unused analog pin
   lcd.init();
   lcd.backlight();
   
@@ -40,14 +44,32 @@ void loop() {
     String message = Serial.readStringUntil('\n');
     message.trim();
     if (message.length() > 0) {
+      
+      // Playful Mode: 25% chance to pretend to stay stuck on 'Thinking...'
+      if (random(0, 4) == 0) {
+        lcd.clear();
+        lcd.setCursor(0, 0);
+        lcd.print("Thinking...");
+        delay(1800); 
+      }
+      
       lcd.clear();
-      lcd.setCursor(0, 0);
-      if (message.length() <= 16) {
-        lcd.print(message);
-      } else {
-        lcd.print(message.substring(0, 16));
+      // Only display the insult if the reset button has been pressed more than 3 times total
+      if (clearPressCount > 3) {
+        lcd.setCursor(0, 0);
+        lcd.print("id10t error");
         lcd.setCursor(0, 1);
-        lcd.print(message.substring(16, min((int)message.length(), 32)));
+        lcd.print("too bad btr luck");
+      } else {
+        // Normal Display Format
+        lcd.setCursor(0, 0);
+        if (message.length() <= 16) {
+          lcd.print(message);
+        } else {
+          lcd.print(message.substring(0, 16));
+          lcd.setCursor(0, 1);
+          lcd.print(message.substring(16, min((int)message.length(), 32)));
+        }
       }
     }
   }
@@ -80,6 +102,7 @@ void loop() {
     // Clear/Reset LCD Button Press
     if (digitalRead(btnClear) == LOW) {
       lastDebounceTime = millis();
+      clearPressCount++; // Increment cumulative reset button counter
       resetCalculator();
       return;
     }
