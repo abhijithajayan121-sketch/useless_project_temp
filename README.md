@@ -21,7 +21,7 @@
 [Is'nt all other calculators a bit too efficient in what they do?]
 
 ### The Solution (that nobody asked for)
-[Hoho say less an arrogant one specially designed to use up resources and u'r time just to give u the wrong answers ? Keep it fun!]
+[Hoho say less an arrogant one specially designed to use up resources and u'r time just to give u the wrong answers ? Keepin it less efficient!]
 
 ## Technical Details
 ### Technologies/Components Used
@@ -32,17 +32,29 @@ For Software:
 - [Arduino IDE , python]
 
 For Hardware:
-- [Arduino Uno Rev3
-16x2 I2C Character LCD Display (with PCF8574 backpack)
-10k Ohm Rotary Potentiometer
-4-Pin Tactile Pushbuttons (5x)
+ESP32 Development Board (30-pin variant)
+16x2 LCD Display with I2C Adapter Module (connected via GPIO 21 for SDA and GPIO 22 for SCL)
+10k Potentiometer (wiper connected to GPIO 34 for analog number selection)
+5 Pushbuttons (for active-LOW inputs with internal pull-up resistors):
+Addition (+): GPIO 13
+Subtraction (-): GPIO 12
+Multiplication (*): GPIO 14
+Division (/): GPIO 27
+Clear / Reset: GPIO 26
+L298N Motor Driver Module (used for its onboard 5V linear voltage regulator to step down main DC input power to 5V for the ESP32 VIN and LCD VCC)
+DC Power Supply / Battery (7V–12V input connected to the L298N power terminal)
 Solderless Breadboard
 Male-to-Male Jumper Wires
 USB Type-A to Type-B Cable
 Integrated Laptop Webcam]
 
-- [Arduino Uno Rev3: ATmega328P microcontroller, 5V operating voltage, 16 MHz clock speed, 32 KB flash memory, 14 digital I/O pins, 6 analog input pins.16x2 I2C Character LCD: 16 columns by 2 rows display, 5V operating voltage, integrated PCF8574 I2C adapter chip, default I2C address 0x27 (or 0x3F), uses A4 (SDA) and A5 (SCL) pins.10k Ohm Rotary Potentiometer: Linear taper ($10\text{ k}\Omega$), 3-pin configuration (5V, Analog Signal A0, GND), 0V to 5V output range mapped to digital values 0–99 in software.Tactile Pushbuttons: 4-pin momentary contact switches, $6\times 6\text{ mm}$ footprint, default HIGH state via internal Arduino pull-up resistors (INPUT_PULLUP), active LOW on press.Serial Communication: Full-duplex UART interface, 9600 baud rate, 8 data bits, no parity, 1 stop bit (8N1 configuration over USB COM port).Laptop Webcam Requirements: Minimum $640\times 480$ resolution at 30 FPS for real-time OpenCV frame capture.Computer Vision Processing: MediaPipe 468-point 3D Face Mesh model, real-time Eye Aspect Ratio (EAR) thresholding at 0.18 for eye open/closed classification.]
-- [Arduino IDE: To compile and upload C++ code to the Arduino Uno.
+-ESP32 Development Board: Acts as the central microcontroller. It reads user inputs from the potentiometer and pushbuttons, performs all arithmetic and arrogant logic locally, makes HTTP GET requests over Wi-Fi to fetch eye-tracking status, and drives the LCD display.
+16x2 I2C LCD Display: Provides the visual interface for the user. It displays the current number inputs selected via the potentiometer, active mathematical operations, status indicators (Thinking..., Connecting Wi-Fi), final calculated outputs, and dynamic insult/error messages.
+10k Potentiometer: Serves as the continuous analog input mechanism. As you turn the dial, its varying voltage output is read by the ESP32 ADC (GPIO 34) and mapped to select integer values from 0 to 99 for calculations.
+5 Pushbuttons: Act as digital inputs configured with internal pull-up resistors (INPUT_PULLUP). Four buttons set the arithmetic operators (+, -, *, /) and trigger the calculation state, while the fifth button serves as a dedicated system reset/clear function (which tracks press counts to trigger reset insults).
+L298N Motor Driver Module: Functions solely as a power regulator for the project. Its onboard 5V regulator steps down higher DC input voltage (7V–12V) to a stable 5V output to safely power the ESP32 via its VIN pin and the 16x2 LCD display.
+7V–12V DC Power Source: Supplies primary raw electrical power to the system (connected to the L298N input terminals), enabling fully wireless untethered operation without relying on USB power.
+- [Arduino IDE: To compile and upload C++ code to the ESP 32 DEV module.
 Python 3 Interpreter: To execute brain.py and run eye-tracking algorithms.
 Command Prompt / Terminal: To execute the Python script and view live system logs.
 Circuit Simulator (Cirkit Designer / Tinkercad): To design, prototype, and test the schematic layout.
