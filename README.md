@@ -32,9 +32,21 @@ For Software:
 - [Arduino IDE , python]
 
 For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
+- [Arduino Uno Rev3
+16x2 I2C Character LCD Display (with PCF8574 backpack)
+10k Ohm Rotary Potentiometer
+4-Pin Tactile Pushbuttons (5x)
+Solderless Breadboard
+Male-to-Male Jumper Wires
+USB Type-A to Type-B Cable
+Integrated Laptop Webcam]
+
+- [Arduino Uno Rev3: ATmega328P microcontroller, 5V operating voltage, 16 MHz clock speed, 32 KB flash memory, 14 digital I/O pins, 6 analog input pins.16x2 I2C Character LCD: 16 columns by 2 rows display, 5V operating voltage, integrated PCF8574 I2C adapter chip, default I2C address 0x27 (or 0x3F), uses A4 (SDA) and A5 (SCL) pins.10k Ohm Rotary Potentiometer: Linear taper ($10\text{ k}\Omega$), 3-pin configuration (5V, Analog Signal A0, GND), 0V to 5V output range mapped to digital values 0–99 in software.Tactile Pushbuttons: 4-pin momentary contact switches, $6\times 6\text{ mm}$ footprint, default HIGH state via internal Arduino pull-up resistors (INPUT_PULLUP), active LOW on press.Serial Communication: Full-duplex UART interface, 9600 baud rate, 8 data bits, no parity, 1 stop bit (8N1 configuration over USB COM port).Laptop Webcam Requirements: Minimum $640\times 480$ resolution at 30 FPS for real-time OpenCV frame capture.Computer Vision Processing: MediaPipe 468-point 3D Face Mesh model, real-time Eye Aspect Ratio (EAR) thresholding at 0.18 for eye open/closed classification.]
+- [Arduino IDE: To compile and upload C++ code to the Arduino Uno.
+Python 3 Interpreter: To execute brain.py and run eye-tracking algorithms.
+Command Prompt / Terminal: To execute the Python script and view live system logs.
+Circuit Simulator (Cirkit Designer / Tinkercad): To design, prototype, and test the schematic layout.
+Wire Strippers / Snips (Optional): For trimming or preparing solid-core jumper wires.]
 
 ### Implementation
 For Software:
