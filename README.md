@@ -2,34 +2,34 @@
 
 
 
-# [Project Name] 🎯
+# [ARROGANT CALCULATOR ] 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: [Server56]
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Team Lead: [Akshay Joseph] - [SaintGits College of Engineering]
+- Member 2: [Abhijith Ajayan] - [SaintGits College of Engineering]
+
 
 ### Project Description
-[2-3 lines about what your project does]
+[This is a type of calculator that wastes clock cycles and resources and gives the right answers only at a random instance.This calculator has a feed from the web can using which its able to decide whether to give the correct answer or not ,if your eyer are open u get the wrong answer if closed it might give the correct answer.]
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+[Is'nt all other calculators a bit too efficient in what they do?]
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+[Hoho say less an arrogant one specially designed to use up resources and u'r time just to give u the wrong answers ? Keep it fun!]
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+- [python and c++]
+- [Mediapipe and OpenCV]
+- [opencv-python ,mediapipe ,pyserial ,math ,time ,random ,LiquidCrystal_I2C.h ,Wire.h]
+- [Arduino IDE , python]
 
 For Hardware:
 - [List main components]
