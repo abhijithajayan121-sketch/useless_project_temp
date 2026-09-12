@@ -70,8 +70,8 @@ For Software:
 *setting up a mathematical operation*
 
 # Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
+![Workflow](<workflow.png>)
+*A basic workflow image*
 
 For Hardware:
 
