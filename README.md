@@ -60,14 +60,14 @@ For Software:
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot1](img1 (1).jpeg)
+*the image showing the model giving a wrong answer and saying its easy*
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot2](img1 (2).jpeg)
+*eye detection to check if it need to give the right or wrong answers*
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot3](img1 (3))
+*setting up a mathematical operation*
 
 # Diagrams
 ![Workflow](Add your workflow/architecture diagram here)
