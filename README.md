@@ -60,13 +60,13 @@ For Software:
 For Software:
 
 # Screenshots (Add at least 3)
-![img1 (1)](img1 (1).jpeg)
+![img1 (1).jpeg](<img1 (1).jpeg>)
 *the image showing the model giving a wrong answer and saying its easy*
 
-![img1 (2)](img1 (2).jpeg)
+![img1 (2)](<img1 (2).jpeg>)
 *eye detection to check if it need to give the right or wrong answers*
 
-![img1 (3)](img1 (3))
+![img1 (3)](<img1 (3).jpeg>)
 *setting up a mathematical operation*
 
 # Diagrams
