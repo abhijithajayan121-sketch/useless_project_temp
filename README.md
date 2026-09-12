@@ -70,8 +70,8 @@ For Software:
 *setting up a mathematical operation*
 
 # Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
+![Workflow](<workflow.png>)
+*A basic workflow image*
 
 For Hardware:
 
@@ -101,9 +101,9 @@ For Hardware:
 [Add any extra demo materials/links]
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- [AKSHAY JOSEPH]: [INITIAL CODDING , INITIAL CIRCUIT DESIGN , BUILDING THE TENSOR FLOW MODEL , CREATING THE DOCUMENTATION , UPDATED THE CODE FOR THE ARDUINO MODEL OF THE PROJECT]
+- [ABHIJITH AJAYAN]: [WIRING THE CIRCUIT , CHANGES TO THE PRIMARY CODE , ADDED FEW MORE TXT TO  THE ANSWERS , SIMULATED THE MODEL]
+
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
