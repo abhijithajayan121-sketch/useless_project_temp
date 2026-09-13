@@ -85,7 +85,7 @@ For Software:
 *literally the picture of the hardware*
 
 # Diagrams
-![Workflow](<workflow.png)
+![Workflow](<flow.png>)
 *A basic workflow image*
 
 For Hardware:
