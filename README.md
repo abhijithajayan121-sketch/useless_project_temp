@@ -15,13 +15,13 @@
 
 
 ### Project Description
-[This is a type of calculator that wastes clock cycles and resources and gives the right answers only at a random instance.This calculator has a feed from the web can using which its able to decide whether to give the correct answer or not ,if your eyer are open u get the wrong answer if closed it might give the correct answer.]
+This is a type of calculator that wastes clock cycles and resources and gives the right answers only at a random instance.This calculator has a feed from the web can using which its able to decide whether to give the correct answer or not ,if your eyer are open u get the wrong answer if closed it might give the correct answer.
 
 ### The Problem (Like they do exist)
-[Is'nt all other calculators a bit too efficient in what they do?]
+Is'nt all other calculators a bit too efficient in what they do?
 
 ### The Solution (for reasons none needs)
-[Hoho say less an arrogant one specially designed to use up resources and u'r time just to give u the wrong answers ? Keepin it less efficient!]
+Hoho say less an arrogant one specially designed to use up resources and u'r time just to give u the wrong answers ? Keepin it less efficient!
 
 ## Technical Details
 ### Technologies/Components Used
