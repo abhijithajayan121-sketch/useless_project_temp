@@ -2,16 +2,16 @@
 
 
 
-# [ARROGANT CALCULATOR ] 🎯
+# ARROGANT CALCULATOR  🎯
 
 
 ## Basic Details
-### Team Name: [Server56]
+### Team Name: Server56
 
 
 ### Team Members
-- Team Lead: [Akshay Joseph] - [Saintgits College of Engineering]
-- Member 2: [Abhijith Ajayan] - [Saintgits College of Engineering]
+- Team Lead: Akshay Joseph - Saintgits College of Engineering
+- Member 2: Abhijith Ajayan - Saintgits College of Engineering
 
 
 ### Project Description
@@ -26,10 +26,10 @@
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [python and c++]
-- [Mediapipe and OpenCV]
-- [opencv-python ,mediapipe ,pyserial ,math ,time ,random ,LiquidCrystal_I2C.h ,Wire.h]
-- [Arduino IDE , python]
+- python and c++
+- Mediapipe and OpenCV
+- opencv-python ,mediapipe ,pyserial ,math ,time ,random ,LiquidCrystal_I2C.h ,Wire.h
+- Arduino IDE , python
 
 For Hardware:
 ESP32 Development Board (30-pin variant)
@@ -54,19 +54,23 @@ Integrated Laptop Webcam]
 5 Pushbuttons: Act as digital inputs configured with internal pull-up resistors (INPUT_PULLUP). Four buttons set the arithmetic operators (+, -, *, /) and trigger the calculation state, while the fifth button serves as a dedicated system reset/clear function (which tracks press counts to trigger reset insults).
 L298N Motor Driver Module: Functions solely as a power regulator for the project. Its onboard 5V regulator steps down higher DC input voltage (7V–12V) to a stable 5V output to safely power the ESP32 via its VIN pin and the 16x2 LCD display.
 7V–12V DC Power Source: Supplies primary raw electrical power to the system (connected to the L298N input terminals), enabling fully wireless untethered operation without relying on USB power.
-- [Arduino IDE: To compile and upload C++ code to the ESP 32 DEV module.
+- Arduino IDE: To compile and upload C++ code to the ESP 32 DEV module.
 Python 3 Interpreter: To execute brain.py and run eye-tracking algorithms.
 Command Prompt / Terminal: To execute the Python script and view live system logs.
 Circuit Simulator (Cirkit Designer / Tinkercad): To design, prototype, and test the schematic layout.
-Wire Strippers / Snips (Optional): For trimming or preparing solid-core jumper wires.]
+Wire Strippers / Snips (Optional): For trimming or preparing solid-core jumper wires.
 
 ### Implementation
 For Software:
 # Installation
-[commands]
+Python Libraries (Laptop Server)flask: Lightweight web framework used to host the REST API on port 5000 and serve the /eye-status endpoint.opencv-python: Computer vision library used to capture video from your webcam, flip the frame for mirror view, and render status overlays.mediapipe: Machine learning solution used to detect facial landmarks and track the Eye Aspect Ratio (EAR).
+
+Arduino C++ Libraries (ESP32 Firmware)These are managed inside Arduino IDE via Tools $\rightarrow$ Manage Libraries:LiquidCrystal_I2C: Drives the 16x2 character LCD via the I2C interface on GPIO 21 (SDA) and GPIO 22 (SCL).WiFi & HTTPClient: Built into the ESP32 board support package (used to connect to your Wi-Fi network and issue GET requests to the Flask server).
+
 
 # Run
-[commands]
+pip install flask opencv-python mediapipe
+cmd in the respective cloned repo file  => python server.py
 
 ### Project Documentation
 For Software:
@@ -98,7 +102,7 @@ For Hardware:
 *same thing as the circuit , just black and whitw*
 
 # Build Photos
-![Components used in the final build]
+!Components used in the final build
 ESP 32 DEV MODULE
 L298N MODULE
 12 V 2 AMP POWER  SUPPLY
@@ -107,7 +111,7 @@ BREAD BOARD
 LCD SCREEN 16*2
 
 
-![Build]
+!Build
 *initially we tried a prototype wit ha narduino uno and then used an esp 32 dev module to run the fully iot based arrognt calculator
 <img width="899" height="1599" alt="arduino" src="https://github.com/user-attachments/assets/f49ad127-67c6-4def-a837-709c7b045ab8" />
 *
@@ -137,8 +141,8 @@ https://github.com/user-attachments/assets/1440c002-c024-48ad-b6b3-7dcab68604b1
 
 
 ## Team Contributions
-- [AKSHAY JOSEPH]: [INITIAL CODDING , INITIAL CIRCUIT DESIGN , BUILDING THE TENSOR FLOW MODEL , CREATING THE DOCUMENTATION , UPDATED THE CODE FOR THE ARDUINO MODEL OF THE PROJECT]
-- [ABHIJITH AJAYAN]: [WIRING THE CIRCUIT , CHANGES TO THE PRIMARY CODE , ADDED FEW MORE TXT TO  THE ANSWERS , SIMULATED THE MODEL]
+- AKSHAY JOSEPH: INITIAL CODDING , INITIAL CIRCUIT DESIGN , BUILDING THE TENSOR FLOW MODEL , CREATING THE  DOCUMENTATION , UPDATED THE CODE FOR THE ARDUINO MODEL OF THE PROJECT , OPTIMIZING CODE FOR ESP IOT BASED MODEL OF THE ARROGANT CALCULATOR 
+- ABHIJITH AJAYAN: WIRING THE CIRCUIT , CHANGES TO THE PRIMARY CODE , ADDED FEW MORE TXT TO  THE ANSWERS , SIMULATED THE MODEL, MAJOR HELP IN ASSEMBLING THE COMPONENTS IN THE ESP BASED MODEL 
 
 
 ---
