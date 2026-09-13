@@ -82,7 +82,7 @@ For Software:
 *setting up a mathematical operation*
 
 # Diagrams
-![Workflow](<workflow.png>)
+![Workflow](<workflow.png)
 *A basic workflow image*
 
 For Hardware:
