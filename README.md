@@ -98,22 +98,41 @@ For Hardware:
 *same thing as the circuit , just black and whitw*
 
 # Build Photos
-![Components](Add photo of your components here)
+![Components](vid 1
+
+https://github.com/user-attachments/assets/41e73954-2aea-4508-8874-36aacb94110c
+
+
+
+)
 *List out all components shown*
 
 ![Build](Add photos of build process here)
 *Explain the build steps*
 
-![Final](Add photo of final product here)
-*Explain the final build*
+![Final](<f.jpeg>)
+*The Arrogant Calculator is an IoT-based hardware system that pairs local embedded control with a remote computer vision pipeline to deliberately mock or trick the user depending on their eye status. The physical build operates untethered from computer power through an L298N motor driver module, which uses its onboard regulator to step down a raw 7V–12V DC input to a clean 5V rail. This power line feeds the central brain of the project—an ESP32 microcontroller—and a 16x2 I2C character LCD display. User input is collected through a 10k potentiometer wired to an analog GPIO pin, mapping dial rotations to integer values between 0 and 99. Operating controls are provided by five pushbuttons configured with internal pull-up resistors for four standard arithmetic functions (+, -, *, /) and a system reset function.
+
+Vision processing runs independently on a laptop as a background service written in Python. Using OpenCV, the system continuously reads and horizontally flips the webcam feed to create a mirrored preview display. MediaPipe Face Mesh processes these frames by mapping 3D facial landmarks to compute an Eye Aspect Ratio (EAR) based on vertical and horizontal eye distances. If the EAR exceeds 0.15, the python script flags the user's eye status as open; otherwise, it registers as closed or undetected. This state is constantly exposed across the shared local Wi-Fi network using a Flask REST API endpoint hosting JSON responses on port 5000.
+
+When an arithmetic operation is submitted on the physical hardware, the ESP32 calculates the actual mathematical result locally and executes a HTTP GET request to fetch the user's live eye state. If the server is unreachable or the network drops, the request times out after two seconds and triggers a server error message on the LCD. If the user repeatedly hits the clear button more than three times, the system overrides normal operations with an insult reading id10t error. Similarly, any calculation yielding a value over 2000 is rejected with sarcastic remarks such as wastage of ram u fool....
+
+The calculator's primary behavioral gimmick relies entirely on the eye status retrieved from the Flask server. When the vision model detects that the user's eyes are open and looking at the screen, the device intentionally returns a modified, incorrect result alongside condescending feedback. If the user successfully hides their gaze by closing their eyes before submitting the calculation, the system enters a conditional check: it grants the exact correct answer 30% of the time, while the remaining 70% of the time it returns an intentionally altered result—such as squaring the output or adding a fixed offset—accompanied by playful, arrogant commentary on the LCD screen.*
 
 ### Project Demo
 # Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
 
-# Additional Demos
-[Add any extra demo materials/links]
+
+https://github.com/user-attachments/assets/5e89db86-6b23-4f8e-833a-4ea7a3e6eebb
+
+
+
+https://github.com/user-attachments/assets/1440c002-c024-48ad-b6b3-7dcab68604b1
+
+
+
+*Explains how the calculator gets you the correct answer (prob = 30%) when the users eyes are closed and wrong answer when the users eye are open*
+
 
 ## Team Contributions
 - [AKSHAY JOSEPH]: [INITIAL CODDING , INITIAL CIRCUIT DESIGN , BUILDING THE TENSOR FLOW MODEL , CREATING THE DOCUMENTATION , UPDATED THE CODE FOR THE ARDUINO MODEL OF THE PROJECT]
