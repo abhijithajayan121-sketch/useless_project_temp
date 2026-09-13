@@ -81,8 +81,11 @@ For Software:
 ![img1 (3)](<img1 (3).jpeg>)
 *setting up a mathematical operation*
 
+![entire pic]()
+*literally the picture of the hardware*
+
 # Diagrams
-![Workflow](<workflow.png>)
+![Workflow](<workflow.png)
 *A basic workflow image*
 
 For Hardware:
