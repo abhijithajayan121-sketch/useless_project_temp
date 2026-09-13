@@ -10,8 +10,8 @@
 
 
 ### Team Members
-- Team Lead: [Akshay Joseph] - [SaintGits College of Engineering]
-- Member 2: [Abhijith Ajayan] - [SaintGits College of Engineering]
+- Team Lead: [Akshay Joseph] - [Saintgits College of Engineering]
+- Member 2: [Abhijith Ajayan] - [Saintgits College of Engineering]
 
 
 ### Project Description
