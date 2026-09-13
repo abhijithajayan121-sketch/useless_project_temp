@@ -91,10 +91,10 @@ For Software:
 For Hardware:
 
 # Schematic & Circuit
-![Circuit](Add your circuit diagram here)
+![Circuit](<circuit.png>)
 *Add caption explaining connections*
 
-![Schematic](<schem.png>)
+![Schematic](<schemm.png>)
 *same thing as the circuit , just black and whitw*
 
 # Build Photos
