@@ -98,11 +98,17 @@ For Hardware:
 *same thing as the circuit , just black and whitw*
 
 # Build Photos
-![Components]
-*List out all components shown*
+![Components used in the final build]
+ESP 32 DEV MODULE
+L298N MODULE
+12 V 2 AMP POWER  SUPPLY
+PUSH BUTTONS
+BREAD BOARD
+LCD SCREEN 16*2
 
-![Build](Add photos of build process here)
-*initially we tried a prototype wit ha narduino uno and then used an esp 32 dev module to run the fully iot based arrognt calculato
+
+![Build]
+*initially we tried a prototype wit ha narduino uno and then used an esp 32 dev module to run the fully iot based arrognt calculator
 <img width="899" height="1599" alt="arduino" src="https://github.com/user-attachments/assets/f49ad127-67c6-4def-a837-709c7b045ab8" />
 *
 
