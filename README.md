@@ -77,8 +77,6 @@ Python Libraries (Laptop Server)flask: Lightweight web framework used to host th
 Arduino C++ Libraries (ESP32 Firmware)These are managed inside Arduino IDE via Tools $\rightarrow$ Manage Libraries:LiquidCrystal_I2C: Drives the 16x2 character LCD via the I2C interface on GPIO 21 (SDA) and GPIO 22 (SCL).WiFi & HTTPClient: Built into the ESP32 board support package (used to connect to your Wi-Fi network and issue GET requests to the Flask server).
 
 
-##How is the python file built??
-
 
 # Run
 pip install flask opencv-python mediapipe 
