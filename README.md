@@ -112,7 +112,7 @@ LCD SCREEN 16*2
 
 
 !Build
-*initially we tried a prototype wit ha narduino uno and then used an esp 32 dev module to run the fully iot based arrognt calculator
+*initially we tried a prototype with an arduino uno and then upgraded to an esp 32 dev module to run the fully iot based arrognt calculator , that communicated with the esp via wifi.
 <img width="899" height="1599" alt="arduino" src="https://github.com/user-attachments/assets/f49ad127-67c6-4def-a837-709c7b045ab8" />
 *
 
@@ -137,7 +137,7 @@ https://github.com/user-attachments/assets/1440c002-c024-48ad-b6b3-7dcab68604b1
 
 
 
-*Explains how the calculator gets you the correct answer (prob = 30%) when the users eyes are closed and wrong answer when the users eye are open*
+*Shows how the calculator gets you the correct answer (prob of correct answer being shown even id the eyes are closed = 30%) when the users eyes are closed and wrong answer when the users eye are open*
 
 
 ## Team Contributions
