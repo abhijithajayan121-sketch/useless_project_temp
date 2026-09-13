@@ -69,7 +69,8 @@ Arduino C++ Libraries (ESP32 Firmware)These are managed inside Arduino IDE via T
 
 
 # Run
-pip install flask opencv-python mediapipe
+pip install flask opencv-python mediapipe 
+
 cmd in the respective cloned repo file  => python server.py
 
 ### Project Documentation
