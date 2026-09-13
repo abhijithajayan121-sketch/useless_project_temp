@@ -102,7 +102,9 @@ For Hardware:
 *List out all components shown*
 
 ![Build](Add photos of build process here)
-*Explain the build steps*
+*initially we tried a prototype wit ha narduino uno and then used an esp 32 dev module to run the fully iot based arrognt calculato
+<img width="899" height="1599" alt="arduino" src="https://github.com/user-attachments/assets/f49ad127-67c6-4def-a837-709c7b045ab8" />
+*
 
 ![Final](<f.jpeg>)
 *The Arrogant Calculator is an IoT-based hardware system that pairs local embedded control with a remote computer vision pipeline to deliberately mock or trick the user depending on their eye status. The physical build operates untethered from computer power through an L298N motor driver module, which uses its onboard regulator to step down a raw 7V–12V DC input to a clean 5V rail. This power line feeds the central brain of the project—an ESP32 microcontroller—and a 16x2 I2C character LCD display. User input is collected through a 10k potentiometer wired to an analog GPIO pin, mapping dial rotations to integer values between 0 and 99. Operating controls are provided by five pushbuttons configured with internal pull-up resistors for four standard arithmetic functions (+, -, *, /) and a system reset function.
