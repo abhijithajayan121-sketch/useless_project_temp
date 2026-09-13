@@ -98,13 +98,7 @@ For Hardware:
 *same thing as the circuit , just black and whitw*
 
 # Build Photos
-![Components](vid 1
-
-https://github.com/user-attachments/assets/41e73954-2aea-4508-8874-36aacb94110c
-
-
-
-)
+![Components]
 *List out all components shown*
 
 ![Build](Add photos of build process here)
@@ -123,7 +117,7 @@ The calculator's primary behavioral gimmick relies entirely on the eye status re
 # Video
 
 
-https://github.com/user-attachments/assets/5e89db86-6b23-4f8e-833a-4ea7a3e6eebb
+https://github.com/user-attachments/assets/41e73954-2aea-4508-8874-36aacb94110c
 
 
 
